@@ -58,6 +58,3 @@ class Parametros:
         parametros.quantidade_navio()
         parametros.quantidade_aviao()
         parametros.mostrar_quantidades()
-
-print (Parametros.main())
-
