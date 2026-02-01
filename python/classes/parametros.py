@@ -6,11 +6,11 @@ class Parametros:
         self.quant_aviao = None
 
     def nivel_dificuldade_escolhido(self):
-        print('Escolha um nível:\nFácil \nDifícil')
+        print('Escolha um nível:\nFácil (f) \nDifícil (d)')
         while True:
             nivel_dificuldade = input('Qual o nível de dificuldade escolhido?:')
             nivel_escolhido = nivel_dificuldade.lower()
-            if nivel_escolhido == "fácil" or nivel_escolhido == "difícil":
+            if nivel_escolhido == "f" or nivel_escolhido == "d":
                 self.nivel_dificuldade = nivel_escolhido
                 break
 
