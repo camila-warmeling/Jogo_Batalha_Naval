@@ -35,12 +35,12 @@ class Parametros:
         self.quant_submarino = quant_embarcacao
         
     def quantidade_navio(self):
-        print('Navio - 1 espaço')
+        print('Navio - 3 espaço')
         quant_embarcacao = self.verificacao_quant_embarcacoes(4, 'navios', ' ')
         self.quant_navio = quant_embarcacao
 
     def quantidade_aviao(self):
-        print('Avião - 1 espaço')
+        print('Avião - 4 espaço em formato de triângulo')
         quant_embarcacao = self.verificacao_quant_embarcacoes(3, 'aviões', ' ')
         self.quant_aviao = quant_embarcacao
         
