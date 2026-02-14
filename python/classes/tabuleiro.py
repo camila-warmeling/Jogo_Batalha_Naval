@@ -1,7 +1,6 @@
 class Tabuleiro:
     def __init__ (self):
-        self.tamanho = 8
-        self.mapa = None
+        self.criar_mapa_vazio()
 
     def criar_mapa_vazio(self):
         primeira_linha = [' ','A','B','C','D','E','F','G','H','I',]
@@ -13,6 +12,5 @@ class Tabuleiro:
         self.mapa = mapa
 
     def mostrar_mapa(self):
-        self.criar_mapa_vazio()
         for linha in self.mapa:
-            print(*linha)
+            print(*linha) #* tira os caracteres como , '' () das listas
