@@ -1,9 +1,10 @@
 class Parametros:
     def __init__(self):
-        self.nivel_dificuldade = None
-        self.quant_submarino = None
-        self.quant_navio = None
-        self.quant_aviao = None
+        self.nivel_dificuldade_escolhido()
+        self.quantidade_submarino()
+        self.quantidade_navio()
+        self.quantidade_aviao()
+        self.mostrar_quantidades()
 
     def nivel_dificuldade_escolhido(self):
         print('Escolha um nível:\nFácil (f) \nDifícil (d)')
@@ -51,9 +52,4 @@ class Parametros:
         Quantidade de Navios: {self.quant_navio}
         Quantidade de Aviões: {self.quant_aviao}''')
 
-    def main(self):
-        self.nivel_dificuldade_escolhido()
-        self.quantidade_submarino()
-        self.quantidade_navio()
-        self.quantidade_aviao()
-        self.mostrar_quantidades()
+
