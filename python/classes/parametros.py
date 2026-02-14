@@ -51,10 +51,9 @@ class Parametros:
         Quantidade de Navios: {self.quant_navio}
         Quantidade de Aviões: {self.quant_aviao}''')
 
-    def main():
-        parametros = Parametros()
-        parametros.nivel_dificuldade_escolhido()
-        parametros.quantidade_submarino()
-        parametros.quantidade_navio()
-        parametros.quantidade_aviao()
-        parametros.mostrar_quantidades()
+    def main(self):
+        self.nivel_dificuldade_escolhido()
+        self.quantidade_submarino()
+        self.quantidade_navio()
+        self.quantidade_aviao()
+        self.mostrar_quantidades()
