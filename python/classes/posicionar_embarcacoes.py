@@ -5,7 +5,7 @@ class Posicionar:
         self.mapa_computador = None
         self.mapa_usuario = None
      
-    def verificacao_posicao_correta(self,embarcacao, posicao):
+    def verificacao_posicao_correta(self, posicao):
         if len(posicao) == 2:
             coluna = [0]
             linha = [1]
@@ -17,11 +17,15 @@ class Posicionar:
         else:
             print(f'Digite uma posição válida')
 
+    def verificar_posicao_vazia(self, posicao):
+        self.posicionar_embarcacao(posicao_vazia)
 
+    def posicionar_embarcação(self, posicao):
+                
     def posicionar_submarino(self, quantidade):
         quant_submarino = quantidade
         print('O submarino ocupa 1 espaço no tabuleiro:')
         print(f'Restam {quant_submarino} submarinos!')
         while True:
             posicao = input('Qual a posição deseja?(Ex:A5):')
-            self.verificar_posicao_embarcacao('submarino', posicao)
+            self.verificar_posicao_embarcacao(posicao)
