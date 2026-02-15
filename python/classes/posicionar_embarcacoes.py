@@ -4,6 +4,18 @@ class Posicionar:
     def __init__(self):
         self.mapa_computador = None
         self.mapa_usuario = None
+     
+    def verificacao_posicao_correta(self,embarcacao, posicao):
+        if len(posicao) == 2:
+            coluna = [0]
+            linha = [1]
+            if coluna in lista_letras and linha in lista_numeros:
+                posicao_correta = posicao
+                self.verificar_posicao_vazia(posicao_correta)
+            else:
+                print('Digite uma posição válida')
+        else:
+            print(f'Digite uma posição válida')
 
 
     def posicionar_submarino(self, quantidade):
