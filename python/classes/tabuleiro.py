@@ -3,11 +3,11 @@ class Tabuleiro:
         self.criar_mapa_vazio()
 
     def criar_mapa_vazio(self):
-        primeira_linha = [' ','A','B','C','D','E','F','G','H','I',]
+        primeira_linha = [' ','A','B','C','D','E','F','G','H','I']
         mapa = []
         mapa.append(primeira_linha)
         for indice in range(1,9):
-            linha = [indice, '•', '•', '•', '•', '•', '•', '•', '•', '•',]
+            linha = [indice, '•', '•', '•', '•', '•', '•', '•', '•', '•']
             mapa.append(linha)
         self.mapa = mapa
 
