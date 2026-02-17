@@ -9,10 +9,11 @@ class Parametros:
     def nivel_dificuldade_escolhido(self):
         print('Escolha um nível:\nFácil (f) \nDifícil (d)')
         while True:
-            nivel_dificuldade = input('Qual o nível de dificuldade escolhido?:')
-            nivel_escolhido = nivel_dificuldade.lower()
-            if nivel_escolhido == "f" or nivel_escolhido == "d":
-                self.nivel_dificuldade = nivel_escolhido
+            nivel = input('Qual o nível de dificuldade escolhido?:').strip().lower()
+            dificuldade = {'f': 'Fácil',
+                           'd': 'Difícil'} #dicionário: a chave f tem o valor Fácil
+            if nivel in dificuldade:
+                self.nivel_dificuldade = nivel[dificuldade]
                 break
 
     def verificacao_quant_embarcacoes(self, max, embarcacao, quant_embarcacao):
@@ -45,7 +46,7 @@ class Parametros:
         quant_embarcacao = self.verificacao_quant_embarcacoes(3, 'aviões', ' ')
         self.quant_aviao = quant_embarcacao
         
-    def mostrar_quantidades(self):
+    def mostrar_parametros(self):
         print(f'''
         Nível Selecionado:{self.nivel_dificuldade}
         Quantidade de Submarinos: {self.quant_submarino}
