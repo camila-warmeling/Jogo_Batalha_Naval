@@ -21,7 +21,7 @@ class Posicionar:
             return None
 
     def verificar_posicao_vazia(self, linha, coluna):
-        posicao_vazia = self.tabuleiro[linha][coluna]
+        posicao_vazia = self.tabuleiro.tabuleiro[linha][coluna]
         if posicao_vazia == '•':
             return True
         else:
@@ -43,7 +43,8 @@ class Posicionar:
 
     def posicionar_submarino(self):
         while self.quant_submarino != 0:
-            print(f'Esse é o seu tabuleiro  atual:{self.tabuleiro}')
+            print(f'Esse é o seu tabuleiro  atual:')
+            self.tabuleiro.mostrar_tabuleiro()
             print('O submarino ocupa 1 espaço no tabuleiro:')
             print(f'Restam {self.quant_submarino} submarinos!')
             posicao = input('Qual a posição deseja?(Ex:A5):').strip().lower() #tira os espaços e coloca tudo minusculo

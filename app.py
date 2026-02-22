@@ -9,7 +9,8 @@ def main():
         parametros.quant_submarino, 
         parametros.quant_navio, 
         parametros.quant_aviao, 
-        tabuleiro.tabuleiro)
+        tabuleiro
+        )
     posicionar.posicionar_submarino()
 
 
