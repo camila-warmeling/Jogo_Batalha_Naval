@@ -4,7 +4,7 @@ class Parametros:
         self.quantidade_submarino()
         self.quantidade_navio()
         self.quantidade_aviao()
-        self.mostrar_quantidades()
+        self.mostrar_parametros()
 
     def nivel_dificuldade_escolhido(self):
         print('Escolha um nível:\nFácil (f) \nDifícil (d)')
@@ -13,7 +13,7 @@ class Parametros:
             dificuldade = {'f': 'Fácil',
                            'd': 'Difícil'} #dicionário: a chave f tem o valor Fácil
             if nivel in dificuldade:
-                self.nivel_dificuldade = nivel[dificuldade]
+                self.nivel_dificuldade = dificuldade[nivel]
                 break
 
     def verificacao_quant_embarcacoes(self, max, embarcacao, quant_embarcacao):
