@@ -1,16 +1,16 @@
 class Tabuleiro:
     def __init__ (self):
-        self.criar_mapa_vazio()
+        self.criar_tabuleiro_vazio()
 
-    def criar_mapa_vazio(self):
+    def criar_tabuleiro_vazio(self):
         primeira_linha = [' ','A','B','C','D','E','F','G','H','I']
-        mapa = []
-        mapa.append(primeira_linha)
+        tabuleiro = []
+        tabuleiro.append(primeira_linha)
         for indice in range(1,9):
             linha = [indice, '•', '•', '•', '•', '•', '•', '•', '•', '•']
-            mapa.append(linha)
-        self.mapa = mapa
+            tabuleiro.append(linha)
+        self.tabuleiro = tabuleiro
 
-    def mostrar_mapa(self):
-        for linha in self.mapa:
+    def mostrar_tabuleiro(self):
+        for linha in self.tabuleiro:
             print(*linha) #* tira os caracteres como , '' () das listas
